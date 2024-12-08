@@ -35,7 +35,7 @@ const MintChronokey: React.FC = () => {
       if (tokenCount === 0) {
         setCustomMessage(
           <span style={{ fontSize: "25px", color: "red", padding: "50px" }}>
-            Sorry, you don not qualify.
+            Sorry, you do not qualify.
           </span>
         );
         setButtonText("Not eligible");
