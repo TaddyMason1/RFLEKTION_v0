@@ -35,7 +35,7 @@ const MintChronokey: React.FC = () => {
       if (tokenCount === 0) {
         setCustomMessage(
           <span style={{ fontSize: "25px", color: "red", padding: "50px" }}>
-            Sorry, you don&apost qualify.
+            Sorry, you don not qualify.
           </span>
         );
         setButtonText("Not eligible");
@@ -65,7 +65,7 @@ const MintChronokey: React.FC = () => {
     try {
       const tx = await UseMint(address);  // Attempt to mint
       setCustomMessage(
-        <span style={{ fontSize: "30px", color: "white", padding: "50px" }}>
+        <span style={{ fontSize: "30px", color: "white", padding: "50px", textWrap: "wrap"}}>
           Mint successful! Transaction hash: {tx}
         </span>
       );
