@@ -4,7 +4,7 @@ import { http } from "wagmi";
 
 export const config = getDefaultConfig({
   appName: "RFLEKTION",
-  projectId: REOWN_ID as string,
+  projectId: process.env.REOWN_ID as string,
   chains: [arbitrumSepolia],
   transports: {
     [arbitrumSepolia.id]: http(),
