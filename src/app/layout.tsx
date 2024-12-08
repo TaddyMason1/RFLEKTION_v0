@@ -36,7 +36,7 @@ export default function RootLayout() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="RFLEKTION preview image" />
-        <meta property="og:url" content="https://rflektion.xyz" />
+        <meta property="og:url" content="https://rflektion.com" />
 
         {/* Twitter Card Tags for Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
