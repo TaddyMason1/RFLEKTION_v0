@@ -5,7 +5,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { WagmiProvider, http } from "wagmi";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RainbowKitProvider, darkTheme, getDefaultConfig } from "@rainbow-me/rainbowkit";
-import { arbitrumSepolia } from "wagmi/chains";
+import { mainnet } from "wagmi/chains";
 import Head from "next/head";
 import Home from "./page";  // Import Home component
 
@@ -15,10 +15,10 @@ const queryClient = new QueryClient();
 // Set up Wagmi client config
 const config = getDefaultConfig({
   appName: "RFLEKTION",
-  projectId: process.env.REOWN_ID || "e79e46c63d3230119def1d367797711d",
-  chains: [arbitrumSepolia],
+  projectId: process.env.REOWN_ID as string,
+  chains: [mainnet],
   transports: {
-    [arbitrumSepolia.id]: http(),
+    [mainnet.id]: http(),
   },
 });
 
