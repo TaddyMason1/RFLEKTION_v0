@@ -23,7 +23,28 @@ const MenuBar = () => {
       }}
     >
       {/* Left: RFLEKTION */}
-      <div style={{ fontSize: "20px", fontWeight: "bold" }}>RFLEKTION</div>
+      <div style={{ fontSize: "25px", fontWeight: "bold" }}>RFLEKTION</div>
+
+  <header>
+    <a
+      href="https://etherscan.io/address/0x1162e72D0C17b637f868b81b597bce7D3245ed4E#code" // Replace with your desired URL
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+      fontSize: "30px",
+      fontWeight: "bolder",
+      transition: 'opacity 0.3s',
+      color: "white",
+      alignContent: "center"
+    }}
+      onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+      onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
+      onClick={(e) => (e.currentTarget.style.opacity = '0.9')}
+    >
+      CA
+    </a>
+  </header>
+
 
       {/* Right: Customized RainbowKit Connect Button */}
       <div
