@@ -35,7 +35,7 @@ const BackgroundAnimation: React.FC = () => {
 
       for (let i = 0; i < drops.length; i++) {
         const text = letters[Math.floor(Math.random() * letters.length)];
-        ctx.fillStyle = "#008080"; // Green color
+        ctx.fillStyle = "#00ffd2"; 
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
         drops[i]++;
