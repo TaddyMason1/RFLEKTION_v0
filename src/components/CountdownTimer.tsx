@@ -38,7 +38,7 @@ const CountdownTimer: React.FC = () => {
       className="fg-white"
       style={{
       position: "fixed",
-      top: 35,
+      top: 40,
       width: "100%",
       color: "#fff",
       textAlign: "center",
