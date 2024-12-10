@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { styleText } from "util";
 
 const CountdownTimer: React.FC = () => {
   // The end time (provided timestamp) in seconds

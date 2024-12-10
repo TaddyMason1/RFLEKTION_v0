@@ -48,8 +48,8 @@ const MintChronokey: React.FC = () => {
         setButtonText("Mint chronokeys");
       }
     } catch (err) {
-      console.error("Eligibility check failed:", err);
-      setError("Failed to check eligibility.");
+      setError("You do not qualify.");
+      console.log(err)
     } finally {
       setIsProcessing(false);
     }

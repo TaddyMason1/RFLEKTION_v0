@@ -13,7 +13,6 @@ export const UseEligibilityCheck = async (address: string | undefined) => {
     functionName: "tokensOfOwner",
     args: [address],
   }) as number[];
-
   let tokenCount = 0;
 
   for (const token of tokens) {
