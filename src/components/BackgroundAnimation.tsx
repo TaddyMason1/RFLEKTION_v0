@@ -14,10 +14,10 @@ const BackgroundAnimation: React.FC = () => {
 
     // Set canvas size
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = 1000;
 
     // Letters setup
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ".split(
+    const letters = "あべしでふがひじかるもぬおぷくるすつうゔわやざいえんおぺきろすつうゔわやざいえんおぺきろすつうゔわやざいえんおぺきろすつうゔわやざいえんおぺきろすつうゔわやざいえんおぺきろすつうゔわやざ".split(
       ""
     );
 
@@ -35,7 +35,7 @@ const BackgroundAnimation: React.FC = () => {
 
       for (let i = 0; i < drops.length; i++) {
         const text = letters[Math.floor(Math.random() * letters.length)];
-        ctx.fillStyle = "#0f0"; // Green color
+        ctx.fillStyle = "#008080"; // Green color
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
         drops[i]++;

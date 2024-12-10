@@ -5,6 +5,7 @@ import PageBlocker from "../components/PageBlocker";
 import MintChronokey from "../components/MintChronoKey";
 import BackgroundAnimation from "../components/BackgroundAnimation";
 import MenuBar from "components/MenuBar";
+import CountdownTimer from "components/CountdownTimer";
 
 export default function Home() {
   const { isConnected } = useAccount(); // Check if the user is connected
@@ -31,7 +32,12 @@ export default function Home() {
           <PageBlocker />
         ) : (
           // Show Mint Button when connected
-          <MintChronokey />
+          <>
+              <CountdownTimer />
+              <MintChronokey />
+              
+          </>
+          
         )}
       </div>
     </>

@@ -31,17 +31,19 @@ const MenuBar = () => {
       target="_blank"
       rel="noopener noreferrer"
       style={{
-      fontSize: "30px",
+      fontSize: "25px",
       fontWeight: "bolder",
       transition: 'opacity 0.3s',
       color: "white",
-      alignContent: "center"
+      textAlign: "center",
+      position: "inherit",
+      paddingRight: 35
     }}
       onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
       onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
       onClick={(e) => (e.currentTarget.style.opacity = '0.9')}
     >
-      CA
+      CONTRACT ADDRESS
     </a>
   </header>
 
@@ -55,8 +57,10 @@ const MenuBar = () => {
         }}
       >
         <ConnectButton
-          label="Verify"
-          accountStatus="full"
+          label="Connect"
+          accountStatus="avatar"
+          showBalance={false}
+          chainStatus="icon"
         />
       </div>
     </div>
