@@ -2,7 +2,6 @@
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import "../app/styles/cyberpunk.css"
-import  CountdownTimer  from "./CountdownTimer"
 
 const MenuBar = () => {
   return (
@@ -46,7 +45,7 @@ const MenuBar = () => {
         onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
         onClick={(e) => (e.currentTarget.style.opacity = '0.9')}
         >
-          CONTRACT ADDRESS
+          CA
         </a>
         </header>
 
@@ -66,7 +65,7 @@ const MenuBar = () => {
           chainStatus="icon"
         />
       </div>
-      <CountdownTimer/>
+      {/*Removed CountdownTimer.tsx element here!!!!! */}
     </div>
   );
 };

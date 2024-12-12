@@ -48,7 +48,7 @@ export default function RootLayout() {
         <WagmiProvider reconnectOnMount={false} config={config}>
           <QueryClientProvider client={queryClient}>
             <RainbowKitProvider theme={darkTheme()}>
-              <Home /> {/* Hardcoding Home component */}
+              <Home />
             </RainbowKitProvider>
           </QueryClientProvider>
         </WagmiProvider>
