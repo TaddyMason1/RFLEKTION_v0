@@ -25,10 +25,10 @@ const MenuBar = () => {
 
       {/* Left: RFLEKTION */}
     <div style={{ fontSize: "25px", fontWeight: "bold" }}>RFLEKTION</div>
-
+      {/*
       <header>
        <a
-        href="https://etherscan.io/address/0x1162e72D0C17b637f868b81b597bce7D3245ed4E#code" // Replace with your desired URL
+        href="https://etherscan.io/address/0x1162e72D0C17b637f868b81b597bce7D3245ed4E#code" 
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -48,9 +48,8 @@ const MenuBar = () => {
           CA
         </a>
         </header>
+        */}
 
-
-      {/* Right: Customized RainbowKit Connect Button */}
       <div
         style={{
           display: "flex",
